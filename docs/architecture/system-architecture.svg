@@ -1,0 +1,92 @@
+<svg width="1100" height="980" viewBox="0 0 1100 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Student Management System Architecture</title>
+  <desc id="desc">Architecture flow from Student User to Java Swing client, socket server, client handler, JDBC connection layer, and MySQL database.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2L10 7L2 12" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <linearGradient id="headerGradient" x1="110" y1="42" x2="990" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="980" rx="28" fill="#F8FAFC"/>
+  <rect x="52" y="42" width="996" height="896" rx="24" fill="white" stroke="#E2E8F0"/>
+
+  <text x="550" y="92" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="url(#headerGradient)">Student Management System</text>
+  <text x="550" y="124" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" fill="#64748B">Java Swing + Socket Programming + JDBC + MySQL</text>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="170" width="370" height="84" rx="14" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+    <text x="550" y="205" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">Student User</text>
+    <text x="550" y="231" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">Interacts with desktop application</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="310" width="370" height="90" rx="14" fill="#F8FAFC" stroke="#475569" stroke-width="2"/>
+    <text x="550" y="346" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">StudentClient</text>
+    <text x="550" y="373" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">Java Swing GUI</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="456" width="370" height="90" rx="14" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+    <text x="550" y="492" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">StudentServer</text>
+    <text x="550" y="519" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">Java socket server</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="602" width="370" height="90" rx="14" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+    <text x="550" y="638" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">ClientHandler</text>
+    <text x="550" y="665" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">Request processing and CRUD logic</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="365" y="748" width="370" height="90" rx="14" fill="#ECFDF5" stroke="#16A34A" stroke-width="2"/>
+    <text x="550" y="784" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">DBConnection</text>
+    <text x="550" y="811" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">JDBC access layer</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M365 882C365 860.46 735 860.46 735 882V912C735 933.54 365 933.54 365 912V882Z" fill="#ECFDF5" stroke="#16A34A" stroke-width="2"/>
+    <path d="M365 882C365 903.54 735 903.54 735 882" stroke="#16A34A" stroke-width="2"/>
+    <text x="550" y="898" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#172033">MySQL Database</text>
+    <text x="550" y="924" text-anchor="middle" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" fill="#475569">studentdb</text>
+  </g>
+
+  <line x1="550" y1="254" x2="550" y2="310" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="577" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Uses desktop UI</text>
+
+  <line x1="550" y1="400" x2="550" y2="456" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="577" y="431" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Socket connection</text>
+
+  <line x1="550" y1="546" x2="550" y2="602" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="577" y="577" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Delegates client session</text>
+
+  <line x1="550" y1="692" x2="550" y2="748" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="577" y="723" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">CRUD operations</text>
+
+  <line x1="550" y1="838" x2="550" y2="860" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="577" y="855" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">JDBC driver</text>
+
+  <g>
+    <rect x="110" y="170" width="158" height="38" rx="19" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <circle cx="132" cy="189" r="7" fill="#2563EB"/>
+    <text x="148" y="194" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">User Layer</text>
+
+    <rect x="110" y="222" width="158" height="38" rx="19" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <circle cx="132" cy="241" r="7" fill="#475569"/>
+    <text x="148" y="246" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Client Layer</text>
+
+    <rect x="110" y="274" width="158" height="38" rx="19" fill="#FFF7ED" stroke="#FED7AA"/>
+    <circle cx="132" cy="293" r="7" fill="#F97316"/>
+    <text x="148" y="298" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Server Layer</text>
+
+    <rect x="110" y="326" width="158" height="38" rx="19" fill="#ECFDF5" stroke="#BBF7D0"/>
+    <circle cx="132" cy="345" r="7" fill="#16A34A"/>
+    <text x="148" y="350" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#334155">Data Layer</text>
+  </g>
+</svg>

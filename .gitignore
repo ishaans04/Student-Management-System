@@ -1,0 +1,12 @@
+target/
+out/
+*.class
+*.log
+*.tmp
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+.env
+application-local.properties
