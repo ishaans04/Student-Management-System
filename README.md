@@ -11,9 +11,7 @@ Screenshots and architecture images are stored separately inside the `docs/` fol
 ## Features
 
 | Feature | Description |
-
 |----------|-------------|
-
 | Add Student | Insert new student records |
 | View Students | Display all student records |
 | Search Student | Find students by ID |
