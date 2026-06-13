@@ -10,14 +10,16 @@ Screenshots and architecture images are stored separately inside the `docs/` fol
 
 ## Features
 
-- Add new student records
-- View all student records
-- Search student records
-- Update existing student details
-- Delete student records
-- Client-server communication using Java sockets
-- JDBC-based MySQL database connectivity
-- MySQL Connector/J JAR files included in the `lib/` folder
+| Feature | Description |
+
+|----------|-------------|
+
+| Add Student | Insert new student records |
+| View Students | Display all student records |
+| Search Student | Find students by ID |
+| Update Student | Modify existing records |
+| Delete Student | Remove student records |
+| Client-Server Communication | Socket-based communication |
 
 ## Tech Stack
 
@@ -48,26 +50,36 @@ The `StudentClient` class provides the desktop user interface and sends requests
 
 ```text
 StudentManagementSystem/
-|-- README.md
-|-- docs/
-|   |-- architecture/
-|   |   |-- system-architecture.md
-|   |   `-- system-architecture.svg
-|   `-- screenshots/
-|-- lib/
-|   |-- mysql-connector-j-local.jar
-|   `-- mysql-connector-j-9.7.0.jar
-|-- src/
-|   |-- client/
-|   |   `-- StudentClient.java
-|   |-- db/
-|   |   `-- DBConnection.java
-|   |-- model/
-|   |   `-- Student.java
-|   `-- server/
-|       |-- ClientHandler.java
-|       `-- StudentServer.java
-`-- out/
+│
+├── .github/
+├── .vscode/
+│   └── settings.json
+│
+├── docs/
+│   ├── architecture/
+│   │   ├── system-architecture.md
+│   │   └── system-architecture.png
+│   │
+│   └── screenshots/
+│
+├── lib/
+│
+├── src/
+│   ├── client/
+│   │   └── StudentClient.java
+│   │
+│   ├── db/
+│   │   └── DBConnection.java
+│   │
+│   ├── model/
+│   │   └── Student.java
+│   │
+│   └── server/
+│       ├── ClientHandler.java
+│       └── StudentServer.java
+│
+├── .gitignore
+└── README.md
 ```
 
 ## Database Setup
@@ -155,17 +167,9 @@ branch
 marks
 ```
 
-## Future Improvements
-
-- Add login and role-based access control
-- Add input validation for all student fields
-- Add better error handling and user-friendly messages
-- Add search filters by ID, name, or branch
-- Move database credentials to environment variables or a configuration file
-- Add unit tests for server and database logic
-- Add build tool support using Maven or Gradle
-- Improve UI styling and layout responsiveness
-
 ## Author
 
-Add your name and profile links here.
+Ishaan Sharma
+
+- GitHub: [ishaans04](https://github.com/ishaans04)
+- LinkedIn: [Ishaan Sharma](https://www.linkedin.com/in/ishaan-sharma-b0ab51403)
